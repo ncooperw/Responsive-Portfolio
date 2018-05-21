@@ -1,0 +1,92 @@
+/*Name Container*/
+.name {
+    float:left;
+    background-color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 5px;
+    width: 350px;
+
+}
+/* Navigation Bar */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 100 px; 
+    float: right;
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+   /* color: ;*/
+   /* text-align: ;*/
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* .name { 
+    background-color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 20px;
+    width: 350px;
+    float: left;
+}*/
+
+body {
+    background-image: "assets\images\funky-lines.png";
+    font-family: arial, 'helvetica-neue', helvetica, sans-serif;
+    color: #777777;
+    border-color: #dddddd;
+    width: 960px;
+
+}
+
+header {
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+/* #name {
+    background-color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 20px;
+    width: 350px;
+} */
+
+.main-container {
+   float: left;
+   background-color: #ffffff;
+   margin: 200px;
+   padding: 25px;
+   width: 960 px;
+
+   
+}
+#section-title {
+    /* overflow: hidden;
+    position: static; */
+    float: left;
+    background-color: white;
+    padding: 25px;
+    color: #4aaaa5;
+    font-family: Georgia, Times, 'Times New Roman', serif;  
+}
+h2:after {
+    content: '';
+    display: block;
+    border: 2px solid black; 
+}
+
+img {
+position: relative;
+width: 200px;
+height: 200px;
+margin-left: 100px;
+}
+
+p {
+    float: left;
+    margin: 100px;
+}

@@ -1,0 +1,336 @@
+/*
+5. Use three `@media screen` tags, each with one of these `max-width`s: `980px`, `768px` and `640px`.
+
+* You use `980px` because you never want any of the content to be cut off. Since the desktop layout is about 960px wide, you want the media queries to kick in before your content gets cut off.
+
+* `768px` is about the width of a tablet and `640px` is about the width of a phone in landscape.
+
+6. Make the layout match the following screenshots:
+
+7. Make the position of the header `static` (the default positioning) when the screen is `640px` wide. The header design takes up a lot of room; you don't want it to stick to the top of a small screen and leave no room for the rest of your site.
+
+8. Be sure to include the `viewport` tag in all your HTML files, otherwise your media-queries won't function as expected on mobile devices. _(Hint: You won't need to use exact pixels for anything other than the container)_ */
+
+body {
+    font-family: arial, 'helvetica-neue', helvetica, sans-serif;
+    color: #777777;
+    font-size: 20px;
+    background-image: url(../images/funky-lines.png);
+    height: fit-content;
+}
+
+.heading-container {
+    height: 40px;
+    width: 100%;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border: 3px outset;
+    padding: 10px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+h2 {
+    color: white;
+}
+
+.wrapper {
+    width: 75%;
+    margin: auto;
+}
+
+.name {
+    float: left;
+    color: white;
+    background-color: #4aaaa5;
+    border: 3px #cccccc;
+    width: auto;
+    padding: 16px;
+    padding-bottom: 2px;
+    /* margin:0 0 0 510px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* add a background to the top navigation*/
+
+.topnav {
+    vertical-align: 0%;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    /* overflow: hidden;
+    font-size: 30px; */
+}
+
+/*Style links inside the navigation bar */
+
+.nav-links {
+    float: right;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    text-align: center;
+    padding: 14px 16 px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #4aaaa5;
+}
+
+/*active tab color */
+
+.topnav a.active {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+.main-container {
+    background-color: #ffffff;
+    border: 5px solid #dddddd;
+    margin-top: 25px;
+    padding: 25px;
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+}
+
+.section-title {
+    color: #4aaaa5;
+    text-align: left;
+    border: thick;
+    border-bottom-color: #777777;
+    padding: 10px;
+    margin: 0px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 25px;
+    display: block;
+}
+
+p {
+    clear: right;
+    margin: auto;
+    border: 0;
+    padding: 25px;
+    line-height: 30px;
+}
+
+/*styling the form */
+
+#form-container {
+    overflow: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+/* submit button */
+
+.button {
+    background-color: #4aaaa5;
+    border: outset;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 150px;
+}
+
+.image-container {
+    position: relative;
+    width: 75%;
+}
+
+.text-block1 {
+    position: absolute;
+    left: 25px;
+    width: 186px;
+    padding: 7px;
+    bottom: -175px;
+    background-color: #4aaaa5;
+    margin: auto;
+}
+
+#image1 {
+    float: left;
+}
+
+.text-block2 {
+    position: absolute;
+    left: 275px;
+    width: 186px;
+    padding: 7px;
+    bottom: -175px;
+    background-color: #4aaaa5;
+    margin: auto;
+}
+
+#image2 {
+    float: left;
+}
+
+.text-block3 {
+    position: absolute;
+    left: 25px;
+    width: 186px;
+    padding: 7px;
+    bottom: 84px;
+    background-color: #4aaaa5;
+    margin: auto;
+}
+
+* #image3 {
+    float: left;
+    position: relative;
+}
+
+.text-block4 {
+    position: absolute;
+    left: auto;
+    width: 186px;
+    padding: 7px;
+    top: 382px;
+    background-color: #4aaaa5;
+    margin: auto;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+#image4 {
+    float: left;
+}
+
+.footer {
+    /* position: absolute;
+    right: auto;
+    left: 0px; */
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 10px solid;
+    border-top-color: #4aaaa5;
+    background-color: #666666;
+    text-align: center;
+    /* bottom: 0; */
+}
+
+@media screen and (max-width: 670px) {
+    .heading-container {
+        position: static;
+        border: none;
+        padding: 0;
+    }
+    .footer {
+        position: static;
+    }
+    .name {
+        vertical-align: 100%;
+        float: none;
+        padding: 16px;
+    }
+    .topnav {
+        padding-bottom: 16px;
+    }
+    .nav-links {
+        float: none;
+        vertical-align: 100%;
+        text-align: center;
+        background-color:#ffffff;
+        padding: 0px;
+        padding-bottom: 10px;
+
+    }
+    .wrapper {
+        width: auto;
+        align-content: center;
+    }
+    .main-container {
+        align-content: center;
+        margin-top: 115px;
+        margin-bottom: 25px;
+        padding: 20px;
+        border: none;
+    }
+    .section-title {
+        text-align: left;
+        margin: auto;
+    }
+    img {
+        width: 239px;
+        height: 225px;
+        padding: 0px;
+        float: none;
+        margin-bottom: 25px
+    }
+    p {
+        float: none;
+        padding: 20px 0 0 0;
+    }
+    input {
+        margin-top: 10px;
+        margin-left: 5px;
+        background-color: #4aaaa5;
+    }
+    textarea {
+        background-color: #4aaaa5;
+    }
+    .text-block1 {
+        /* margin: auto; */
+        width: 226px;
+        left: 0px;
+        bottom: -140px;
+    }
+    .text-block2 {
+        top: 551px;
+        left: auto;
+        width: 226px;
+        height: 20px;
+    }
+    .text-block3 {
+        left: auto;
+        width: 226px;
+        height: 20px;
+    }
+    .text-block4 {
+        left: -25px;
+        width: 226px;
+        top: 863px;
+        height: 20px;
+    }
+}
