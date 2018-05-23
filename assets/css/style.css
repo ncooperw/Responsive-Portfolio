@@ -220,15 +220,19 @@ textarea {
 }
 
 .text-block4 {
-    position: absolute;
-    left: auto;
+    z-index: 1;
     width: 186px;
     padding: 7px;
-    top: 382px;
     background-color: #4aaaa5;
     margin: auto;
+    /* position: absolute;
+    left: auto;
+   
+    top: 382px;
+    
+    
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 25px; */
 }
 
 #image4 {
@@ -236,9 +240,9 @@ textarea {
 }
 
 .footer {
-    /* position: absolute;
+    position: fixed;
     right: auto;
-    left: 0px; */
+    left: 0px;
     width: 100%;
     margin-top: 25px;
     padding-top: 25px;
@@ -247,7 +251,7 @@ textarea {
     border-top-color: #4aaaa5;
     background-color: #666666;
     text-align: center;
-    /* bottom: 0; */
+    bottom: 0;
 }
 
 @media screen and (max-width: 670px) {
@@ -271,10 +275,9 @@ textarea {
         float: none;
         vertical-align: 100%;
         text-align: center;
-        background-color:#ffffff;
+        background-color: #ffffff;
         padding: 0px;
         padding-bottom: 10px;
-
     }
     .wrapper {
         width: auto;
