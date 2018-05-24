@@ -12,86 +12,48 @@
 </head>
 
 <body>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Nicole Cooper-White</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="heading-container">
-        <div class="wrapper">
-            <div class="name">
-                <h1>Nicole Cooper-White</h1>
-            </div>
+    <div id="main-container" class="container">
+        <section class="main-section">
 
-            <div class="topnav">
-                <ul class="nav-links">
+            <!--Form-->
+            <form id="contact-form">
+                <ul>
                     <li>
-                        <a href="index.html">About</a>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
                     </li>
                     <li>
-                        <a href="portfolio.html">Portfolio</a>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
                     </li>
                     <li>
-                        <a class="active" href="contact.html">Contact</a>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="main-container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h1>Contact</h1>
-                    <hr>
-                </div>
-            </div>
-        </div>
-
-        <div id="form-container">
-            <!--Form-->
-            <div class="row">
-                <div class="col-12">
-                    <form action="action">
-                        First name:
-                        <br>
-                        <input type="text" name="firstname">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <br> Last name:
-                    <br>
-                    <input type="text" name="lastname">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <br> Email:
-                    <br>
-                    <input type="email" name="email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <br> Message:
-                    <br>
-                    <textarea name="message" rows="10" cols="30"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <input type="submit" value="submit" class="button">
-                </div>
-            </div>
+                <input type="submit">
             </form>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- footer -->
-
-    <div class="footer">
-        <h6>&copy; Copyright</h6>
-    </div>
+    </footer>
 </body>
 
 </html>
