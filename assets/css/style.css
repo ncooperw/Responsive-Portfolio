@@ -125,8 +125,8 @@ li:last-child {
 
 img {
     float: left;
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
     margin: auto;
     padding: 25px;
     display: block;
@@ -185,7 +185,21 @@ textarea {
     background-color: #4aaaa5;
     margin: auto;
 }
+.row {
+   max-height: 50%;
+    flex: 25%;
+}
 
+.col1 {
+    flex: 25%;
+    max-width: 50%;
+
+}
+.col2 {
+    float:right;
+    flex: 25%;
+    max-width: 50%;
+}
 #image1 {
     float: left;
 }
@@ -225,22 +239,20 @@ textarea {
     padding: 7px;
     background-color: #4aaaa5;
     margin: auto;
-    /* position: absolute;
+    position: absolute;
     left: auto;
-   
     top: 382px;
-    
-    
     text-decoration: none;
-    margin-left: 25px; */
+    margin-left: 25px;
 }
 
 #image4 {
     float: left;
+    display: block;
 }
 
 .footer {
-    position: fixed;
+    /* position: fixed; */
     right: auto;
     left: 0px;
     width: 100%;
